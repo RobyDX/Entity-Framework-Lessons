@@ -718,6 +718,7 @@ namespace EFLesson.Controllers
         /// </summary>
         /// <returns>Result</returns>
         [HttpGet("Raw")]
+        [ProducesDefaultResponseType(typeof(List<AddressOutput>))]
         public async Task<IActionResult> Raw()
         {
             SqlParameter p = new("@City", "Rome");
@@ -766,7 +767,6 @@ namespace EFLesson.Controllers
         /// <param name="input">Course Information</param>
         /// <returns>Result</returns>
         [HttpPost("MultiInsert")]
-        [ProducesDefaultResponseType(typeof(int))]
         public async Task<IActionResult> MultiInsert([FromBody] CourseInput input)
         {
             Student? student = await db.Students.FirstOrDefaultAsync();
@@ -983,8 +983,6 @@ namespace EFLesson.Controllers
         {
             using var transaction = db.Database.BeginTransaction();
 
-
-
             //get current student
             var current = (from s in db.Students where s.Id == userId select s).FirstOrDefault();
 
@@ -1071,6 +1069,7 @@ namespace EFLesson.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPut("ChangeTracker")]
+        [ProducesDefaultResponseType(typeof(string))]
         public async Task<IActionResult> ChangeTracker()
         {
             StringBuilder sb = new();

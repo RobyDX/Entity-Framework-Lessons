@@ -1116,6 +1116,7 @@ namespace EFLesson.Controllers
                 return NotFound();
 
             entry = db.Entry(user);
+            
 
             //now EF is tracking our object
 

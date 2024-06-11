@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFLesson", "EFLesson\EFLesson.csproj", "{DE275104-C482-4245-92D9-214CC97A035E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFLesson", "EFLesson\EFLesson.csproj", "{DE275104-C482-4245-92D9-214CC97A035E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFInterceptor", "EFInterceptor\EFInterceptor.csproj", "{38BE9334-8BA7-40CF-BF20-7B7AB191A804}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{DE275104-C482-4245-92D9-214CC97A035E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE275104-C482-4245-92D9-214CC97A035E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE275104-C482-4245-92D9-214CC97A035E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38BE9334-8BA7-40CF-BF20-7B7AB191A804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38BE9334-8BA7-40CF-BF20-7B7AB191A804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38BE9334-8BA7-40CF-BF20-7B7AB191A804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38BE9334-8BA7-40CF-BF20-7B7AB191A804}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
